@@ -7,4 +7,8 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'learnAngular';
+
+  // membuat data variabel
+  harga = 12000;
+  jml = 5;
 }
