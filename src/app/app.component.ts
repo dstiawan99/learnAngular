@@ -9,6 +9,7 @@ export class AppComponent {
   title = 'learnAngular';
 
   // membuat data variabel
+  produk = 'taplak meja';
   harga = 12000;
   jml = 5;
 }
