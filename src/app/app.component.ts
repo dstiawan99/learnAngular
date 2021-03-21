@@ -12,4 +12,6 @@ export class AppComponent {
   produk = 'taplak meja';
   harga = 12000;
   jml = 5;
+  // membuat objeck
+  pelanggan = {nama : 'Diana',umur : 25, alamat:'malang'};
 }
