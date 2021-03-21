@@ -12,9 +12,17 @@ import { Component, OnInit } from '@angular/core';
 })
 export class LearnComponent implements OnInit {
 
+  public nama = "aku mah apa";
+
+  // make function
+
+
   constructor() { }
 
   ngOnInit(): void {
   }
 
+  getUser(){
+    return "Hello "+ this.nama+" apa kabar";
+  }
 }
