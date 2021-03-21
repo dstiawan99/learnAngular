@@ -14,4 +14,6 @@ export class AppComponent {
   jml = 5;
   // membuat objeck
   pelanggan = {nama : 'Diana',umur : 25, alamat:'malang'};
+  // membuat array
+  nomorAcak = [2,3,5,45,23,211,64,86,424,54];
 }
