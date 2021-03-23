@@ -1,8 +1,16 @@
-<h1>learn componen</h1>
+<!-- <h1>learn componen</h1> -->
 
 <!-- modification interpolation -->
-<p>nama saya : {{nama}}</p>
+<!-- <p>nama saya : {{nama}}</p>
 <p>panjang nama saya adalah : {{nama.length}}</p>
-<p>mengubah nama saya menjadi besar : {{nama.toUpperCase()}}</p>
+<p>mengubah nama saya menjadi besar : {{nama.toUpperCase()}}</p> -->
 <!-- call function -->
-<p>{{getUser()}}</p>
+<!-- <p>{{getUser()}}</p> -->
+
+<h1>Learn Property Banding</h1>
+<!-- dengan interpolasi -->
+<input id="{{getId}}" type="text" value="insert in here"/><br><br>
+<!-- dengan [] -->
+<input [disabled]="disableFalse" type="text" value="insert in here"/><br><br>
+<!-- dengan tambahan bind-* -->
+<input bind-disabled="disableTrue" type="text" value="insert in here"/>

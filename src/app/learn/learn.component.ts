@@ -13,6 +13,9 @@ import { Component, OnInit } from '@angular/core';
 export class LearnComponent implements OnInit {
 
   public nama = "aku mah apa";
+  public getId = "id0321";
+  public disableFalse = false;
+  public disableTrue = true;
 
   // make function
 
