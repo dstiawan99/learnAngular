@@ -1,4 +1,6 @@
 import { Component, OnInit } from '@angular/core';
+import { SelectControlValueAccessor } from '@angular/forms';
+import { errorMonitor } from 'node:events';
 
 @Component({
   // memanggil componen dengan tag
@@ -13,13 +15,22 @@ import { Component, OnInit } from '@angular/core';
 export class LearnComponent implements OnInit {
 
   public nama = "aku mah apa";
-  public getId = "id0321";
-  public disableFalse = false;
-  public disableTrue = true;
+  
+  // public getId = "id0321";
+  // public disableFalse = false;
+  // public disableTrue = true;
+
+  public bold = "textBold";
+  public error = false;//true;
+  public succes = true;//false;
+  public messageText = {
+    "textBold" : !this.error,
+    "error" : this.succes,
+    "succes" : !this.error
+  }
+
 
   // make function
-
-
   constructor() { }
 
   ngOnInit(): void {

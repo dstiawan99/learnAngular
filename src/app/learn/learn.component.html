@@ -7,10 +7,19 @@
 <!-- call function -->
 <!-- <p>{{getUser()}}</p> -->
 
-<h1>Learn Property Banding</h1>
+<!-- <h1>Learn Property Banding</h1> -->
 <!-- dengan interpolasi -->
-<input id="{{getId}}" type="text" value="insert in here"/><br><br>
+<!-- <input id="{{getId}}" type="text" value="insert in here"/><br><br> -->
 <!-- dengan [] -->
-<input [disabled]="disableFalse" type="text" value="insert in here"/><br><br>
+<!-- <input [disabled]="disableFalse" type="text" value="insert in here"/><br><br> -->
 <!-- dengan tambahan bind-* -->
-<input bind-disabled="disableTrue" type="text" value="insert in here"/>
+<!-- <input bind-disabled="disableTrue" type="text" value="insert in here"/> -->
+
+<h1>Class Binding</h1>
+<!-- class default -->
+<p class="success textBold">Class Binding</p>
+<!-- with binding class -->
+<p [class]="bold">Class Binding</p>
+<p [class.error]="success">Class Binding</p>
+<!-- with binding class dg directive-->
+<p [ngClass]="messageText">Class Binding</p>
