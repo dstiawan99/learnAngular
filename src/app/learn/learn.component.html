@@ -1,4 +1,4 @@
-<!-- <h1>learn componen</h1> -->
+<h1>learn Binding</h1>
 
 <!-- modification interpolation -->
 <!-- <p>nama saya : {{nama}}</p>
@@ -15,11 +15,21 @@
 <!-- dengan tambahan bind-* -->
 <!-- <input bind-disabled="disableTrue" type="text" value="insert in here"/> -->
 
-<h1>Class Binding</h1>
+<!-- <h1>Class Binding</h1> -->
 <!-- class default -->
-<p class="success textBold">Class Binding</p>
+<!-- <p class="success textBold">Class Binding</p> -->
 <!-- with binding class -->
-<p [class]="bold">Class Binding</p>
-<p [class.error]="succes">Class Binding</p>
-<!-- with binding class dg directive-->
-<p [ngClass]="messageText">Class Binding</p>
+<!-- <p [class]="bold">Class Binding</p> -->
+<!-- <p [class.error]="succes">Class Binding</p> -->
+<!-- with binding class dg directive / secara objek-->
+<!-- <p [ngClass]="messageText">Class Binding</p> -->
+
+<h2>Style Binding</h2>
+<!-- untuk satu properti secara langsung -->
+<p [style.color]="'red'">Lerning style binding</p>
+<!-- mengunakan variabel -->
+<p [style.color]="textColor">Lerning style binding</p>
+<!-- menggunakan kondisi untuk style -->
+<p [style.color]="error ? 'red' : textColor">Lerning style binding</p>
+<!-- untuk banyak property menggunakan objek -->
+<p [ngStyle]="textStyle">Lerning style binding</p>

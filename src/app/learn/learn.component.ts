@@ -21,12 +21,18 @@ export class LearnComponent implements OnInit {
   // public disableTrue = true;
 
   public bold = "textBold";
+  public textColor = "blue";
   public error = false;//true;
   public succes = true;//false;
   public messageText = {
     "textBold" : !this.error,
     "error" : this.succes,
     "succes" : !this.error
+  }
+  public textStyle = {
+    "color" : !this.textColor,
+    "background" : "green",
+    "fontStyle" : "italic"
   }
 
 
