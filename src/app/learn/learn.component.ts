@@ -52,4 +52,9 @@ export class LearnComponent implements OnInit {
     this.nama;
     this.events = event.timeStamp;
   }
+
+  onSubmit(value){
+    console.log(value);
+    this.events = value;
+  }
 }

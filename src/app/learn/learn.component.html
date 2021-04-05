@@ -37,3 +37,12 @@
 <h2>Event Binding</h2>
 <button (click)="onClick($event)">Button</button>
 <p>hasil event = {{nama}} <br> isi event timesStamp = {{events}}</p>
+<br><br>
+<h2>Template Refecence Variabel</h2>
+<!-- menampilkan objeck hmtl -->
+<input type="text" #inputan/>
+<button (click)="onSubmit(inputan)">submit</button>{{events}}
+<br>
+<!-- menampilkan objeck jasil inputan -->
+<input type="text" #input/>
+<button (click)="onSubmit(input.value)">submit</button>{{events}}
