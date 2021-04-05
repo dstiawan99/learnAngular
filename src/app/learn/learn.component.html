@@ -24,12 +24,16 @@
 <!-- with binding class dg directive / secara objek-->
 <!-- <p [ngClass]="messageText">Class Binding</p> -->
 
-<h2>Style Binding</h2>
+<!-- <h2>Style Binding</h2> -->
 <!-- untuk satu properti secara langsung -->
-<p [style.color]="'red'">Lerning style binding</p>
+<!-- <p [style.color]="'red'">Lerning style binding</p> -->
 <!-- mengunakan variabel -->
-<p [style.color]="textColor">Lerning style binding</p>
+<!-- <p [style.color]="textColor">Lerning style binding</p> -->
 <!-- menggunakan kondisi untuk style -->
-<p [style.color]="error ? 'red' : textColor">Lerning style binding</p>
+<!-- <p [style.color]="error ? 'red' : textColor">Lerning style binding</p> -->
 <!-- untuk banyak property menggunakan objek -->
-<p [ngStyle]="textStyle">Lerning style binding</p>
+<!-- <p [ngStyle]="textStyle">Lerning style binding</p> -->
+
+<h2>Event Binding</h2>
+<button (click)="onClick($event)">Button</button>
+<p>hasil event = {{nama}} <br> isi event timesStamp = {{events}}</p>

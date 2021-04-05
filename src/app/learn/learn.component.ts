@@ -35,6 +35,7 @@ export class LearnComponent implements OnInit {
     "fontStyle" : "italic"
   }
 
+  public events = "";
 
   // make function
   constructor() { }
@@ -44,5 +45,11 @@ export class LearnComponent implements OnInit {
 
   getUser(){
     return "Hello "+ this.nama+" apa kabar";
+  }
+
+  onClick (event){
+    console.log(event);
+    this.nama;
+    this.events = event.timeStamp;
   }
 }
