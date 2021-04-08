@@ -14,7 +14,7 @@ import { errorMonitor } from 'node:events';
 })
 export class LearnComponent implements OnInit {
 
-  public nama = "aku mah apa";
+  public nama = "";
   
   // public getId = "id0321";
   // public disableFalse = false;
