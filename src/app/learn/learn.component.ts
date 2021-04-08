@@ -15,6 +15,7 @@ import { errorMonitor } from 'node:events';
 export class LearnComponent implements OnInit {
 
   public nama = "";
+  public dataNama = ['Anggi','Angga','Anwar','Anissa','Aulya'];
   
   // public getId = "id0321";
   // public disableFalse = false;

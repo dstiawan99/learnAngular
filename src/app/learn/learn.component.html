@@ -62,11 +62,38 @@
 </ng-template> -->
 
 <!-- ngSwitch -->
-<h2>NgSwitch</h2>
+<!-- <h2>NgSwitch</h2>
 <div [ngSwitch]="textColor">
     <div *ngSwitchCase="'biru'">Kamu memilih warna {{textColor}}</div>
     <div *ngSwitchCase="'merah'">Kamu memilih warna {{textColor}}</div>
     <div *ngSwitchCase="'hijau'">Kamu memilih warna {{textColor}}</div>
     <div *ngSwitchCase="'kuning'">Kamu memilih warna {{textColor}}</div>
     <div *ngSwitchDefault>Warna {{textColor}} Tidak Tersedia</div>
+</div> -->
+
+<!-- ngFor -->
+<h2>Learn ngFor</h2>
+<!-- memunculkan data -->
+<div *ngFor="let data of dataNama;">
+    <p>{{data}}</p>
+</div><br>
+<!-- memunculkan data dan index-->
+<div *ngFor="let data of dataNama; index as i">
+    <p>index {{i}} adalah {{data}}</p>
+</div><br>
+<!-- mencari data pertama-->
+<div *ngFor="let data of dataNama; first as f">
+    <p>{{f}} {{data}}</p>
+</div><br>
+<!-- mencari data terakhir-->
+<div *ngFor="let data of dataNama; last as l">
+    <p>{{l}} {{data}}</p>
+</div><br>
+<!-- mencari data ganjil-->
+<div *ngFor="let data of dataNama; odd as o">
+    <p>{{o}} {{data}}</p>
+</div><br>
+<!-- mencari data genap-->
+<div *ngFor="let data of dataNama; even as e">
+    <p>{{e}} {{data}}</p>
 </div>
