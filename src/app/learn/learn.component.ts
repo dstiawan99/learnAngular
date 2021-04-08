@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, Input } from '@angular/core';
 import { SelectControlValueAccessor } from '@angular/forms';
 import { errorMonitor } from 'node:events';
 
@@ -8,12 +8,12 @@ import { errorMonitor } from 'node:events';
   // memanggil componen dengan class
   // selector: '.app-learn',
   // memanggil componen dengan directive
-  selector: '[app-learn]',
+  selector: 'app-learn',
   templateUrl: './learn.component.html',
   styleUrls: ['./learn.component.css']
 })
 export class LearnComponent implements OnInit {
-
+  @Input() public pData;
   public nama = "";
   public dataNama = ['Anggi','Angga','Anwar','Anissa','Aulya'];
   

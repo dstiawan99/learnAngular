@@ -6,6 +6,8 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
+  public message = "Data From App Component"; 
+
   title = 'learnAngular';
 
   // membuat data variabel
