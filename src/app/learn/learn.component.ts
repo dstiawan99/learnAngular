@@ -1,4 +1,4 @@
-import { Component, OnInit, Input } from '@angular/core';
+import { Component, OnInit, Input, Output, EventEmitter } from '@angular/core';
 import { SelectControlValueAccessor } from '@angular/forms';
 import { errorMonitor } from 'node:events';
 
@@ -14,6 +14,7 @@ import { errorMonitor } from 'node:events';
 })
 export class LearnComponent implements OnInit {
   @Input() public pData;
+  @Output() public cData = new EventEmitter();
   public nama = "";
   public dataNama = ['Anggi','Angga','Anwar','Anissa','Aulya'];
   
@@ -58,5 +59,9 @@ export class LearnComponent implements OnInit {
   onSubmit(value){
     console.log(value);
     this.events = value;
+  }
+
+  onSend(){
+    this.cData.emit("This data Form Learn Component");
   }
 }

@@ -22,7 +22,8 @@
   
     <!-- belajar componen -->
     <!-- memanggil componen dengan tag -->
-    <app-learn [pData]="message"></app-learn>
+    <p>{{receivedMessage}}</p>
+    <app-learn (cData)="receivedMessage=$event" [pData]="message"></app-learn>
     <!-- memanggil componen dengan class 
   <div class="app-learn">
   </div> -->
