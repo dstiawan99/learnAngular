@@ -21,7 +21,7 @@ export class LearnComponent implements OnInit {
   // public disableTrue = true;
 
   public bold = "textBold";
-  public textColor = "blue";
+  public textColor = "biru";
   public error = false;//true;
   public succes = true;//false;
   public displayText = true;

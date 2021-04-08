@@ -51,12 +51,22 @@
 <input type="text" [(ngModel)]="nama"/>{{nama}} -->
 
 <!-- ngIF -->
-<div *ngIf="displayText; then showText else hiddenText">
+<!-- <div *ngIf="displayText; then showText else hiddenText"> -->
     <!-- <h2>Belajar ngIf</h2> -->
-</div>
+<!-- </div>
 <ng-template #showText>
     <h2>Text Is Show</h2>
 </ng-template>
 <ng-template #hiddenText>
     <h2>Text Is Hidden</h2>
-</ng-template>
+</ng-template> -->
+
+<!-- ngSwitch -->
+<h2>NgSwitch</h2>
+<div [ngSwitch]="textColor">
+    <div *ngSwitchCase="'biru'">Kamu memilih warna {{textColor}}</div>
+    <div *ngSwitchCase="'merah'">Kamu memilih warna {{textColor}}</div>
+    <div *ngSwitchCase="'hijau'">Kamu memilih warna {{textColor}}</div>
+    <div *ngSwitchCase="'kuning'">Kamu memilih warna {{textColor}}</div>
+    <div *ngSwitchDefault>Warna {{textColor}} Tidak Tersedia</div>
+</div>
