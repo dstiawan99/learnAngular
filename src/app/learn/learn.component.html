@@ -47,5 +47,16 @@
 <!-- <input type="text" #input/> -->
 <!-- <button (click)="onSubmit(input.value)">submit</button>{{events}} -->
 
-<h2>Two Ways Binding</h2>
-<input type="text" [(ngModel)]="nama"/>{{nama}}
+<!-- <h2>Two Ways Binding</h2>
+<input type="text" [(ngModel)]="nama"/>{{nama}} -->
+
+<!-- ngIF -->
+<div *ngIf="displayText; then showText else hiddenText">
+    <!-- <h2>Belajar ngIf</h2> -->
+</div>
+<ng-template #showText>
+    <h2>Text Is Show</h2>
+</ng-template>
+<ng-template #hiddenText>
+    <h2>Text Is Hidden</h2>
+</ng-template>

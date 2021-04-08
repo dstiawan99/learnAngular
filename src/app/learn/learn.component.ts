@@ -24,6 +24,7 @@ export class LearnComponent implements OnInit {
   public textColor = "blue";
   public error = false;//true;
   public succes = true;//false;
+  public displayText = true;
   public messageText = {
     "textBold" : !this.error,
     "error" : this.succes,
