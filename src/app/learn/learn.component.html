@@ -99,10 +99,26 @@
 <!-- </div> -->
 
 <!-- Component Interaction -->
-<div>
+<!-- <div> -->
     <!-- mengambil data dari parent -->
-    <div>
-        <h2>{{pData}}</h2>
-    </div>
-    <button (click)="onSend()">Send</button>
+    <!-- <h2>Learn Component Interaktif</h2> -->
+    <!-- <div> -->
+        <!-- <h2>{{pData}}</h2> -->
+    <!-- </div> -->
+    <!-- <button (click)="onSend()">Send</button> -->
+<!-- </div> -->
+
+<!-- Learn Pipes -->
+<div>
+    <h2>Learn Pipes</h2>
+</div>
+<div>
+    <h2>{{nama | lowercase}}</h2>
+    <h2>{{textStyle | json}}</h2>
+    <h2>{{1.345 | number:'1.2-3'}}</h2>
+    <h2>{{1.345 | number:'3.2-3'}}</h2>
+    <h2>{{1.345 | number:'3.2-3'}}</h2>
+    <h2>{{0.8653 | percent}}</h2>
+    <h2>{{159999 | currency}}</h2>
+    <h2>{{159999 | currency:'Rp. '}}</h2>
 </div>

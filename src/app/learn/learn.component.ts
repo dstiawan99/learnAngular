@@ -15,7 +15,7 @@ import { errorMonitor } from 'node:events';
 export class LearnComponent implements OnInit {
   @Input() public pData;
   @Output() public cData = new EventEmitter();
-  public nama = "";
+  public nama = "Samdora";
   public dataNama = ['Anggi','Angga','Anwar','Anissa','Aulya'];
   
   // public getId = "id0321";
